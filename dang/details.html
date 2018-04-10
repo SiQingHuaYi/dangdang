@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>当当-详情页</title>
+		<link rel="stylesheet" type="text/css" href="css/details.css"/>
+	</head>
+	<body>
+		<div id="header">
+			<!--顶部导航-->
+			<div class="tools">
+				<div class="top">
+					<!--右侧菜单-->
+					<ul class="top_nav">
+						<li class='top_cart'>
+							<a href="cart.html">
+								<i class='icon_cart'></i>
+								购物车
+								<b id='top_nav_count'>0</b>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">我的订单</a>
+						</li>
+						<li>
+							<a href="javascript:;">我的云书房</a>
+						</li>
+						<li>
+							<a href="javascript:;" class='menu_btn'>我的当当</a>
+							<ul class="headlist">
+								<li><a href="">积分抵现</a></li>
+								<li><a href="">我的收藏</a></li>
+								<li><a href="">我的余额</a></li>
+								<li><a href="">我的评论</a></li>
+								<li><a href="">礼券/礼品卡</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:;">小说投稿</a>
+						</li>
+						<li>
+							<a href="javascript:;" class='menu_btn'>企业采购</a>
+							<ul class="headlist">
+								<li><a href="">大宗采购</a></li>
+								<li><a href="">礼品卡采购</a></li>
+								<li><a href="">礼品卡激活</a></li>
+								<li><a href="">礼品卡使用</a></li>
+								<li><a href="">3C数码团购</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:;" class='menu_btn'>客户服务</a>
+							<ul class="headlist">
+								<li><a href="">帮助中心</a></li>
+								<li><a href="">自助退换货</a></li>
+								<li><a href="">自助发票</a></li>
+								<li><a href="">联系客服</a></li>
+								<li><a href="">我要投诉</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="top_reg">
+						<p id="welcome">
+							欢迎光临当当，请<a href="login.html" class="login"style="color: red;">登录</a>
+							<a href="register.html" class="vip">成为会员</a>
+						</p>
+					</div>
+					<div class="top_area">
+						<a href="javascript:;" class="area_a">送至：<span id="curent_area">北京</span></a>
+						<ul class='arrive_list' style='display: none;' id='arrive_list'>
+							<li><a href="javascript:;">北京</a></li>
+							<li><a href="javascript:;">天津</a></li>
+							<li><a href="javascript:;">河北</a></li>
+							<li><a href="javascript:;">山西</a></li>
+							<li><a href="javascript:;">内蒙古</a></li>
+							<li><a href="javascript:;">辽宁</a></li>
+							<li><a href="javascript:;">吉林</a></li>
+							<li><a href="javascript:;">黑龙江</a></li>
+							<li><a href="javascript:;">上海</a></li>
+							<li><a href="javascript:;">江苏</a></li>
+							<li><a href="javascript:;">浙江</a></li>
+							<li><a href="javascript:;">安徽</a></li>
+							<li><a href="javascript:;">福建</a></li>
+							<li><a href="javascript:;">江西</a></li>
+							<li><a href="javascript:;">山东</a></li>
+							<li><a href="javascript:;">河南</a></li>
+							<li><a href="javascript:;">湖北</a></li>
+							<li><a href="javascript:;">湖南</a></li>
+							<li><a href="javascript:;">广东</a></li>
+							<li><a href="javascript:;">广西</a></li>
+							<li><a href="javascript:;">海南</a></li>
+							<li><a href="javascript:;">重庆</a></li>
+							<li><a href="javascript:;">四川</a></li>
+							<li><a href="javascript:;">贵州</a></li>
+							<li><a href="javascript:;">云南</a></li>
+							<li><a href="javascript:;">西藏</a></li>
+							<li><a href="javascript:;">陕西</a></li>
+							<li><a href="javascript:;">甘肃</a></li>			
+							<li><a href="javascript:;">青海</a></li>
+							<li><a href="javascript:;">宁夏</a></li>
+							<li><a href="javascript:;">新疆</a></li>
+							<li><a href="javascript:;">台湾</a></li>
+							<li><a href="javascript:;">香港</a></li>
+							<li><a href="javascript:;">澳门</a></li>
+							<li><a href="javascript:;">钓鱼岛</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--logo搜索栏-->
+			<div id="logo">
+				<div class="logoSearch">
+					<!--logo图片-->
+					<div class="logo">
+						<a href="index.html"><img src="img/index/1.png"/></a>
+					</div>
+					<!--搜索框部分-->
+					<div class="search">
+						<div class="form">
+							<div class="wrap_search"></div>
+							<input type="text" class="text" value="十万童书 每满100减50"/>
+							<div class="select">
+								<span class="alltype">全部分类</span>
+								<span class="icon"></span>
+								<ul class="select_pop" style="height: 0;padding: 0;border: 0;">
+									<li><a href="javascript:;">全部分类</a></li>
+									<li><a href="javascript:;">尾品汇</a></li>
+									<li><a href="javascript:;">图书</a></li>
+									<li><a href="javascript:;">电子书</a></li>
+									<li><a href="javascript:;">音像</a></li>
+									<li><a href="javascript:;">影视</a></li>
+									<li><a href="javascript:;">时尚美妆</a></li>
+									<li><a href="javascript:;">母婴用品</a></li>
+									<li><a href="javascript:;">玩具</a></li>
+									<li><a href="javascript:;">孕婴服饰</a></li>
+									<li><a href="javascript:;">童装童鞋</a></li>
+									<li><a href="javascript:;">家居日用</a></li>
+									<li><a href="javascript:;">家具装饰</a></li>
+									<li><a href="javascript:;">服装</a></li>
+									<li><a href="javascript:;">鞋</a></li>
+									<li><a href="javascript:;">手表饰品</a></li>
+									<li><a href="javascript:;">运动户外</a></li>
+									<li><a href="javascript:;">汽车用品</a></li>
+									<li><a href="javascript:;">食品</a></li>
+									<li><a href="javascript:;">手机通讯</a></li>
+									<li><a href="javascript:;">数码影音</a></li>
+									<li><a href="javascript:;">电脑办公</a></li>
+									<li><a href="javascript:;">大家电</a></li>
+									<li><a href="javascript:;">家用电器</a></li>
+								</ul>
+							</div>
+							<input type="button" class="gobtn"/>
+						</div>
+					</div>
+					<!--搜索接口-->
+					<div id="sug_key">
+						<ul id="keyword">
+							
+						</ul>
+					</div>
+					<!--热词部分-->
+					<div class="resou">
+						<div class="hot">
+							热搜：
+							<a href="javascript:;">都市丽人</a>
+							<a href="javascript:;">去旅行系列</a>
+							<a href="javascript:;">小熊电器</a>
+							<a href="javascript:;">周大福黄金</a>
+							<a href="javascript:;">学生文具</a>
+							<a href="javascript:;">尾品汇</a>
+						</div>
+						<a href="javascript:;" class="most">高级搜索</a>
+					</div>
+					<!--购物车部分-->
+					<div class="cart">
+						<a href="cart.html">
+							<i class="icon_carts"></i>
+							购物车
+							<span class="cart_counts">0</span>
+						</a>
+					</div>
+					<!--订单部分-->
+					<div class="myorder">
+						<a href="javascript:;">我的订单</a>
+					</div>
+				</div>
+			</div>
+			<!--一级导航部分-->
+			<div id="nav">
+				<ul>
+					<li class="all"><a href="">全部商品分类</a></li>
+					<li><a href="">尾品汇</a></li>
+					<li><a href="">图书</a></li>
+					<li><a href="">电子书</a></li>
+					<li><a href="">网络文学</a></li>
+					<li><a href="">服装</a></li>
+					<li><a href="">运动户外</a></li>
+					<li><a href="">孕婴童</a></li>
+					<li><a href="">家居</a></li>
+					<li><a href="">当当优品</a></li>
+					<li><a href="">食品</a></li>
+					<li><a href="">Apple</a></li>
+					<li><a href="">电器城</a></li>
+				</ul>
+			</div>
+		</div>
+		
+        <!--中间商品详情区-->
+        <div id="det_body">
+			<div class="breadcrumb">
+				<a href="http://category.dangdang.com/cp01.00.00.00.00.00.html">图书</a>
+				<span>></span>
+				<a href="http://category.dangdang.com/cp01.49.00.00.00.00.html">教材</a>
+				<span>></span>
+				<a href="http://category.dangdang.com/cp01.49.01.00.00.00.html">研究生/本科/专科教材</a>
+				<span>></span>
+				<a href="http://category.dangdang.com/cp01.49.01.17.00.00.html">经济管理类</a>
+				<span>></span>
+				<a href="javascript:;" id='goodsId' goodId='1'>经济学原理 （第7版）(套装微观经济学分册+宏观经济学分册 曼昆</a>
+			</div>
+			<div class="product clear">
+				
+				<!--左边图片栏-->
+                <div class="left_box">
+                	<!--左边大图-->
+					<div class="smallf" >
+						<!--<img src="http://img3m7.ddimg.cn/33/23/1353907797-4_k_1.jpg" alt="" />-->
+						<!--<div class="sf" style="z-index: 20000;"></div>-->
+					</div>
+					<div class="manjian">
+						<img src="img/details/sale_picture.png"/>
+						<p class="manjian_font">每满999减99，多买多减</p>
+					</div>
+					<!--下面列表图-->
+					<div id="ulist">
+						<div id="list">
+							<ul class="clear">
+								<li><img src="http://img3m3.ddimg.cn/48/15/23697183-1_w_1.jpg" alt="" /></li>
+								<li><img src="http://img3m3.ddimg.cn/48/15/23697183-3_w_4.jpg" alt="" /></li>
+								<li><img src="http://img3m3.ddimg.cn/48/15/23697183-4_w_4.jpg" alt="" /></li>
+								<li><img src="http://img3m3.ddimg.cn/48/15/23697183-4_w_4.jpg" alt="" /></li>
+								<li><img src="http://img3m3.ddimg.cn/48/15/23697183-1_w_1.jpg" alt="" /></li>
+								<li><img src="http://img3m3.ddimg.cn/48/15/23697183-3_w_4.jpg" alt="" /></li>
+								<li><img src="http://img3m3.ddimg.cn/48/15/23697183-4_w_4.jpg" alt="" /></li>
+								<li><img src="http://img3m3.ddimg.cn/48/15/23697183-4_w_4.jpg" alt="" /></li>
+							</ul>
+						</div>
+					</div>
+					<div class="bigf">
+						<!--<img src="http://img3m7.ddimg.cn/33/23/1353907797-4_u_1.jpg" alt="" />-->
+					</div>
+					
+					<div class="share_box">
+						<div class="share_icon">
+							<a href="javascript:;" class='btn_fxd'>
+								<i style='background-position: 0 -60px;'></i>分享
+							</a>
+							<a href="javascript:;" class='btn_fxd'>
+								<i style='background-position: -15px -60px;'></i>送积分99999
+							</a>
+							<a href="javascript:;">
+								<i style='background-position: -30px -60px;'></i>收藏商品(9999人气)
+							</a>
+						</div>
+					</div>
+				</div>
+				
+				<!--中间详情栏-->
+				<div class="show_info">
+					<div class="sale_box">
+						<div class="sale_box_left">
+							<div class="name_info">
+								<!--<h1>经济学原理 （第7版）(套装微观经济学分册+宏观经济学分册 曼昆）    </h1>-->
+								<!--<h2>哈佛大学曼昆教授扛鼎之作，广受欢迎的经济学入门读物，带你迈进经济学的殿堂！</h2>	-->
+							</div>
+							<div class="messbox_info">
+								<span class="t1">作者:（美）
+									<a href="http://search.dangdang.com/?key2=%C2%FC%C0%A5&medium=01&category_path=01.00.00.00.00.00">曼昆</a>
+									  著  
+									 <a href="http://search.dangdang.com/?key2=%C1%BA%D0%A1%C3%F1&medium=01&category_path=01.00.00.00.00.00">梁小明</a>
+									 ，
+									 <a href="http://search.dangdang.com/?key2=%C1%BA%C0%F9&medium=01&category_path=01.00.00.00.00.00">梁硕</a>
+									  译
+								</span>
+								<span class="t1">
+									出版社:
+									<a href="http://search.dangdang.com/?key3=%B1%B1%BE%A9%B4%F3%D1%A7%B3%F6%B0%E6%C9%E7&medium=01&category_path=01.00.00.00.00.00">北京大学出版社</a>
+								</span>
+								<span class="t1">出版时间:2015年05月 </span>
+								<div class="pinglun clear">
+									<span class="t1">
+										在
+										<a href="http://bang.dangdang.com/books/bestsellers/01.49.00.00.00.00-recent7-0-0-1-1">当当教材榜</a>
+										排名
+										<span>7</span>
+										位
+									</span>
+									<span class="t1"></span>
+									<span class="t1">
+										<span class="star_box">
+											<span class="star"></span>
+										</span>
+										<a href="javascript:;">99999+</a>
+										条评论
+									</span>
+									<a href="javascript:;" class='score'>我要写评论</a>
+								</div>
+							</div>
+							
+							<!--商品价格区-->
+							<div class="price_info clear">
+								<div class="price_pc">
+									<div class="price_d">
+										<p class="t">当当价</p>
+										<p class="dd_price">
+											<span class="yuan">¥</span>
+											999.00
+										</p>
+									</div>
+									<div class="price_zhe">(9.99折)</div>
+									<div class="price_m price_m_t">定价</div>
+									<div class="price_m price_m_r">
+										<span class="yuan">¥</span>
+										1000.00
+									</div>
+								</div>
+							</div>
+							<!--满减区-->
+							<div class="cuxiao clear">
+								<div class="left">促销</div>
+								<div class="right">
+									<div class="clearfix">
+										<b>电子书加价购</b>
+										<div class="rule">
+											<ul>
+												<li>
+													<a href="javascript:;" class="checkboxa"></a>
+													<a href="http://e.dangdang.com/products/1900722745.html#ddclick_reco_ebook_purch" class="jia_gou">+999元换购《看透超强识人读心术(电子书)》作者：【美】格雷格·威廉姆斯（Greg Williams）著 苏静涛 译</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="clearfix">
+										<b>满额减</b>
+										<div class="rule">
+											<p>
+												<span class="text">每满¥999减99</span>
+												<a href="" class="alink">详情>></a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="hehe">
+							    <img src="img/details/tl1.png" style="display: block;"/>
+						    </div>
+						   
+							<!--购买按钮-->
+							<div class="buy_box">
+								<div class="num">
+									<input type="text" class="text_count" id='buy_count' value="1"/>
+									<a href="javascript:;" class='num_add' id='num_add'></a>
+									<a href="javascript:;" class='num_del num_disabled' id='num_del'></a>
+								</div>
+								<div class="buy_box_btn clear">
+									<a href="cart.html" id='part_buy_button' class='btn btn_red'>
+										<i class="cart"></i>加入购物车
+									</a>
+									<a href="cart.html" class='btn btn_b btn_b_red'>立即购买</a>
+									<a href="cart.html" id="ebook_buy_button" class="btn btn_blue02">购买电子书</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--右边推荐栏-->
+				    <div class="right">
+				    	<img src="img/details/tl2.png" style="display: block;float: right;"/>
+				    </div>
+				</div>
+			</div>
+		</div>
+
+		<!--尾部代码-->
+		<div id="footer">
+			<div class="footer">
+				<!--尾部最上面-->
+				<div class="footer_pic_new">
+					<div class="footer_pic_new_inner">
+						<a href="javascript:;"><span>正规渠道正品保障</span></a>
+						<a href="javascript:;"><span>放心购物货到付款</span></a>
+						<a href="javascript:;"><span>150城市次日送达</span></a>
+						<a href="javascript:;"><span>上门退换购物无忧</span></a>
+					</div>
+				</div>
+				<!--尾部导航栏---公用-->
+				<div class="footer_public">
+					<div class="footerlist clear">
+						<span class="f_title">购物指南</span>
+						<ul>
+							<li><a href="">购物流程</a></li>
+							<li><a href="">发票制度</a></li>
+							<li><a href="">账户管理</a></li>
+							<li><a href="">会员优惠</a></li>
+						</ul>
+					</div>
+					<div class="footerlist clear">
+						<span class="f_title">购物指南</span>
+						<ul>
+							<li><a href="">购物流程</a></li>
+							<li><a href="">发票制度</a></li>
+							<li><a href="">账户管理</a></li>
+							<li><a href="">会员优惠</a></li>
+						</ul>
+					</div>
+					<div class="footerlist clear">
+						<span class="f_title">购物指南</span>
+						<ul>
+							<li><a href="">购物流程</a></li>
+							<li><a href="">发票制度</a></li>
+							<li><a href="">账户管理</a></li>
+							<li><a href="">会员优惠</a></li>
+						</ul>
+					</div>
+					<div class="footerlist clear">
+						<span class="f_title">购物指南</span>
+						<ul>
+							<li><a href="">购物流程</a></li>
+							<li><a href="">发票制度</a></li>
+							<li><a href="">账户管理</a></li>
+							<li><a href="">会员优惠</a></li>
+						</ul>
+					</div>
+					<div class="footerlist clear">
+						<span class="f_title">购物指南</span>
+						<ul>
+							<li><a href="">购物流程</a></li>
+							<li><a href="">发票制度</a></li>
+							<li><a href="">账户管理</a></li>
+							<li><a href="">会员优惠</a></li>
+						</ul>
+					</div>
+					<div class="footerlist clear">
+						<span class="f_title">购物指南</span>
+						<ul>
+							<li><a href="">购物流程</a></li>
+							<li><a href="">发票制度</a></li>
+							<li><a href="">账户管理</a></li>
+							<li><a href="">会员优惠</a></li>
+						</ul>
+					</div>
+				</div>
+				<!--我是分割线-->
+				<div class="footer_box">
+					<div class="footer_nav">
+						<a href="javascript:;">公司简介</a>
+						<span class="sep">|</span>
+						<a href="javascript:;">诚聘英才</a>
+						<span class="sep">|</span>	
+						<a href="javascript:;">手机当当</a>
+						<span class="sep">|</span>
+						<a href="javascript:;">网站联盟</a>
+						<span class="sep">|</span>
+						<a href="javascript:;">当当招商</a>
+						<span class="sep">|</span>
+						<a href="javascript:;">机构销售</a>
+						<span class="sep">|</span>
+						<a href="javascript:;">官方Blog</a>
+					</div>
+					<div class="footer_text">
+						<span>Copyright (C) 当当网 2004-2017，All Rights Reserved</span>
+					</div>
+					<div class="footer_text">
+						<span><a href="javascript:;">京ICP证041189号</a></span>
+						<span class="sep">|</span>
+						<span>出版物经营许可证 新出发京批字第直0673号</span>
+						<span class="sep">|</span>
+						<span>食品流通许可证：SP1101011010021855(1-1)</span>
+						<br />
+						<span>互联网药品信息服务资格证编号：(京)-非经营性-2012-0016</span>
+						<span class="sep">|</span>
+						<span>京公网安备110101000001号</span>
+						<br />
+						<span>互联网违法和不良信息举报电话：4001066666-5 邮箱：<a href="javascript:;">service@cs.dangdang.com</a></span>
+						<br />
+						<span>
+							<a href="javascript:;">网络出版服务许可证（总）网出证（京）字第049号</a>
+							<a href="javascirpt:;">北京当当网信息技术有限公司</a>，公司地址：北京市朝阳区北三环东路8号静安中心21层
+						</span>
+					</div>
+					<!--最底部图片-->
+					<ul class="footer_icon clear">
+						<li><a href="javascript:;"><img src="http://img4.ddimg.cn/00012/2010/validate.gif"/></a></li>
+						<li><a href="javascript:;"><img src="http://img61.ddimg.cn/7d593c48-48f6-4fc9-85e0-7d6e10dfc2a2.hpvgUvc9"/></a></li>
+						<li><a href="javascript:;"><img src="http://img63.ddimg.cn/upload_img/00111/home/brand_128_47.png"/></a></li>
+						<li><a href="javascript:;"><img src="http://img60.ddimg.cn/upload_img/00459/home/hlwjbzx_182.png"/></a></li>
+						<li><a href="javascript:;"><img src="http://img60.ddimg.cn/upload_img/00459/home/cnnic.png"/></a></li>
+					</ul>
+					
+					
+					<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" ></script>
+					<script src="js/details.js" type="text/javascript" charset="utf-8"></script>
+					<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

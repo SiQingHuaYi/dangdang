@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>新用户注册-当当网</title>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+	</head>
+	<body>
+		<!--头部代码-->
+		<div id="dd_head">
+			<div class="head_content">
+				<!--右上导航栏-->
+				<div class="ddnew_nav">
+					<ul class="ddnewnav_menu">
+						<li class="ddnew_cart"><a href="">购物车</a></li>
+						<li class="ddnewhead_separate"></li>
+						<li><a href="">我的订单</a></li>
+						<li class="ddnewhead_separate"></li>
+						<li class="ddnew_mydd">
+							<a href="javascript:;" class="ddmine_list">我的当当</a>
+							<div class="box_mydd" style="z-index: 1000;display: none;">
+								<ul class="box_mydd_list">
+									<li><a href="javascript:;">我的订单</a></li>
+									<li><a href="javascript:;">购物礼券</a></li>
+									<li><a href="javascript:;">我的积分</a></li>
+									<li><a href="javascript:;">我的收藏</a></li>
+									<li><a href="javascript:;">我的评论</a></li>
+									<li><a href="javascript:;">数字商品</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="ddnewhead_separate"></li>
+						<li class="ddnew_card"><a href="javascript:;" class="ddcard_list">礼品卡</a>
+							<div class="box_card" style="z-index: 1000; display: none;">
+								<ul class="box_card_list">
+									<li><a href="javascript:;">购买</a></li>
+									<li><a href="javascript:;">激活</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="ddnewhead_separate"></li>
+						<li><a href="">手机当当</a></li>
+						<li class="ddnewhead_separate"></li>
+						<li><a href="">企业销售</a></li>
+						<li class="ddnewhead_separate"></li>
+						<li class="help"><a href="">帮助</a></li>
+					</ul>
+				</div>
+				<!--登录注册切换栏-->
+				<p class="nickname">
+					欢迎光临当当网，请
+					<a href="login.html">登录</a>
+					<a href="javascript:;">免费注册</a>
+				</p>
+				<!--左边logo区-->
+				<div class="logo">
+					<a href="index.html" title="回到首页">
+						<img src="img/register/head_logo.gif" alt="当当网"/>
+					</a>
+				</div>
+			</div>
+			<!--下面分割边框-->
+			<div class="bord"></div>
+		</div>
+		<!--中间表单注册区-->
+		<form action="php/register.php" method="post" id="myform">
+			<div id="bd">
+				<div class="shadow_box">
+					<div class="register_box">
+						<!--上面切换tab栏-->
+						<div class="register_tab">
+							<span class="dd_more">
+								<a href="index.html" class="home">当当首页</a>
+								<a href="http://help.dangdang.com/details/page2">注册帮助</a>
+							</span>
+							<a href="javascript:;" class="register_new register_a">新用户注册</a>
+							<a href="javascript:;" class="register_new">企业用户注册</a>
+						</div>
+						<!--右边固定客服栏-->
+						<div class="help_trigger">
+							<a href="javascript:;" title="联系客服"></a>
+						</div>
+						<!--注册内容-->
+						<div class="register_body">
+							<!--上面提示-->
+							<div class="tip">
+								<div>
+									贴心提示：请勿设置与邮箱密码相同的账户登录密码或支付密码，防止不法分子窃取您的当当账户信息，
+									<a href="javascript:;">谨防诈骗</a>
+									!
+								</div>
+							</div>
+							<!--表单注册区-->
+							<table border="0" cellspacing="0" cellpadding="0" width="100%">
+								<tbody>
+									<tr>
+										<td>用户名:</td>
+										<td class='tt'>
+											<input type="text" id='username' name='username' class='isV' />
+											<span>用户名可用于登录、找回密码、接收订单通知等服务</span>
+											<i></i>
+										</td>
+									</tr>
+									<tr>
+										<td>邮箱:</td>
+										<td class='tt'>
+											<input type="email" id='email' name='email' class='isV'/>
+											<span>email可用于登录、找回密码、接收订单通知等服务</span>
+											<i></i>
+										</td>
+									</tr>
+									<tr>
+										<td>手机号码</td>
+										<td class='tt'>
+											<input type="text" id='tel' name='tel' class='isV'/>
+											<span>手机号可用于登录、找回密码、接收订单通知等服务</span>
+											<i></i>
+										</td>
+									</tr>
+									<tr>
+										<td>登录密码</td>
+										<td class='tt'>
+											<input type="password" id='password' name='password' class='isV' />
+											<span>请输入密码</span>
+											<i></i>
+										</td>
+									</tr>
+									<tr>
+										<td>确认密码</td>
+										<td class='tt'>
+											<input type="password" id='ispwd' name='ispwd' class='isV'/>
+											<span>请再次输入密码</span>
+											<i></i>
+										</td>
+									</tr>
+									<tr>
+										<td>验证码</td>
+										<td class='tt'>
+											<input type="password" id='yzm' class="yzm"style="width: 150px;margin-left:20px ;"/>
+											<img src="https://login.dangdang.com/p/tmp_proxy.php?t=13241"/>
+											<a href="javascript:;" id='changeImg'>换一张</a>
+											<span>请输入验证码，不区分大小写</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<button type="button" id='mysubmit'>注册</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+		
+		
+	    <!--尾部公用区-->
+		<div id="footer">
+			<div class="footer_box">
+				<div class="footer_nav">
+					<a href="javascript:;">公司简介</a>
+					<span class='sep'>|</span>
+					<a href="javascript:;">诚聘英才</a>
+					<span class='sep'>|</span>
+					<a href="javascript:;">手机当当</a>
+					<span class='sep'>|</span>
+					<a href="javascript:;">网站联盟</a>
+					<span class='sep'>|</span>
+					<a href="javascript:;">当当招商</a>
+					<span class='sep'>|</span>
+					<a href="javascript:;">机构销售</a>
+					<span class='sep'>|</span>
+					<a href="javascript:;">官方Blog</a>
+				</div>
+				<div class="footer_text">
+					<span>Copyright (C) 当当网 2004-2017，All Rights Reserved</span>
+				</div>
+				<div class="footer_text">
+					<span><a href="javascript:;">京ICP证041189号</a></span>
+					<span class="sep">|</span>
+					<span>出版物经营许可证 新出发京批字第直0673号</span>
+					<span class="sep">|</span>
+					<span>食品流通许可证：SP1101011010021855(1-1)</span>
+					<br />
+					<span>互联网药品信息服务资格证编号：(京)-非经营性-2012-0016</span>
+					<span class="sep">|</span>
+					<span>京公网安备110101000001号</span>
+				</div>
+				<ul class="footer_icon clear" style="width: 695px;">
+					<li><a href="javascript:;"><img src="img/footer/msg.gif"/></a></li>
+					<li><a href="javascript:;"><img src="img/footer/webSelf.png"/></a></li>
+					<li><a href="javascript:;"><img src="img/footer/brand.png"/></a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" ></script>
+		
+		<script src="js/reginster.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

@@ -1,0 +1,429 @@
+@charset "utf-8";
+@import "var";
+@import "public";
+
+//--头部代码--
+#dd_head{
+    color: #404040;
+    font: 12px/18px "\5b8b\4f53",Arial,Helvetica,sans-serif;
+    .head_content{
+        width: 960px;
+        margin: 0 auto;
+        padding-top: 2px;
+        height: 71px;
+        color: #404040;
+        background: #fff url(../img/register/head-bg.gif) repeat-x 0 -148px;
+    }
+    p{
+        float: right;
+        display: inline;
+        padding: 2px 10px 0 0;
+        width: 450px;
+        height: 19px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-align: right;
+        a{
+            display: inline-block;
+            color: #1a66b3;
+            margin-right: 5px;
+        }
+    }
+}
+.ddnew_nav{
+    float: right;
+    display: inline;
+    width: 788px;
+    height: 21px;
+}    
+.ddnewnav_menu{
+    float: right;
+    display: inline;
+    height: 21px;
+    .ddnewhead_separate{
+        padding: 0;
+        width: 1px;
+        
+        background: url(../img/register/head-bg.gif) no-repeat 0 -102px;
+        font-size: 0;
+        line-height: 0;
+        overflow: hidden;
+    }
+    .ddnew_mydd{
+        position: relative;
+        width: 71px;
+        z-index: 200;
+        .ddmine_list{
+            padding-right: 15px;
+            background: url(../img/register/jing.gif) no-repeat -94px -236px;
+        }
+    }    
+
+.box_mydd,.box_card{
+    position: absolute;
+    left: 0;
+    top: 21px;
+    width: 71px;
+    background: #fff;
+    overflow: hidden;
+}
+.box_mydd_list,.box_card_list{
+    float: none;
+    width: 69px;
+    border: 1px solid #ee7304;
+    border-top: none;
+    overflow: hidden;
+    li{
+        float: none;
+        display: block;
+        margin: 0;
+        padding: 2px 6px 1px;
+        width: 57px;
+        overflow: hidden;
+        a{
+            padding: 0;
+            width: 57px;
+            text-align: left;
+            font-size: 12px;
+            text-decoration: none;
+            border: none;
+            border-bottom: solid 1px #f5f4f4;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.box_card_list{
+    width: 57px;
+    li{
+        width: 33px;
+        a{
+            width: 45px;
+        }
+    }
+}     
+.ddnew_card{
+    position: relative;
+    z-index: 200;
+    .ddcard_list{
+        padding-right: 15px;
+        background: url(../img/register/jing.gif) no-repeat -94px -236px;
+    }
+}
+.ddnew_cart{
+    background: url(../img/register/jing.gif) no-repeat 0 -234px;
+    padding-left: 14px;
+    
+}
+li{
+        float: left;
+        display: inline;
+        height: 21px;
+        a{
+            display: inline-block;
+            padding: 1px 6px 0;
+            height: 19px;
+            color: #404040;
+            border: 1px solid #fff;
+            border-bottom: none;
+            overflow: hidden;
+            &:hover{
+                color: red;
+            }
+        } 
+    }
+}     
+.bord{
+    margin: 0 auto;
+    width: 960px;
+    height: 3px;
+    background: #f07700;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+}
+.logo{
+    display: inline;
+    width: 172px;
+    height: 71px;
+    overflow: hidden;
+    a{
+        display: block;
+        width: 172px;
+        height: 71px;
+        overflow: hidden;
+        img{
+            display: block;
+        }
+    }
+}
+
+
+
+//----购物车主要部分----
+#cart_body{
+    width:960px;
+    margin:0 auto;
+    #LoginFalse{
+        height:34px;
+        line-height: 34px;
+        border:1px solid #ffecec;
+        position:relative;
+        color:#323232;
+        margin:10px 0;
+        background-color: #fff5f5;
+        i{
+            width: 34px;
+            height: 34px;
+            display: inline-block;
+            background: url(../img/cart/icon_sprite.png) 5px -201px no-repeat;
+            vertical-align: top;
+        }
+        a{
+            width: 62px;
+            height: 22px;
+            line-height: 22px;
+            display: inline-block;
+            background: #ff2832;
+            border-radius: 2px;
+            color: #fff;
+            text-align: center;
+            margin: 0 10px;
+        }
+    }
+    
+    .shopping_title{
+        line-height: 36px;
+        height: 36px;
+        margin-top: 10px;
+        li{
+            float: left;
+            text-align: center;
+        }
+        .a1{
+            text-align: left;
+            width: 202px;
+        }
+        .a2{
+            text-align: left;
+            width: 280px; 
+        }
+        .a3{
+            width: 130px;
+        }
+        .a4{
+            width: 130px;
+        }
+        .a5{
+            width: 70px;
+        }
+        a{
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border: 1px solid #bcbcbc;
+            background-color: #fff;
+            text-decoration: none;
+            border-radius: 3px;
+            font-size: 0;
+            line-height: 0;
+            overflow: hidden;
+            margin: 0 10px 0 0;
+            vertical-align: text-bottom;
+            &:hover{
+                border-color: #ff2832;
+                text-decoration: none;
+            }
+            &.check_on{
+                border-color: #ff2832;
+                background: #ff2832 url(../img/cart/icon_sprite.png) no-repeat -65px -1px;
+            }
+        }
+    }
+    .shopping_list{
+        width: 958px;
+        border: 1px solid #ebebeb;
+        background-color: #fafafa;
+        margin-bottom: 40px;
+        .empty-cart{
+            height: 98px;
+            padding: 80px 0 120px;
+            color: #333;
+            .empty-cart-msg{
+                height: 98px;
+                line-height: 20px;
+                font-size: 14px;
+                padding-left: 341px;
+                padding-top: 25px;
+                a{
+                    display: block;
+                    color: red !important;
+                }
+            }  
+        }
+        .bb_none{
+            td{
+                border-bottom: none 0;
+            }
+        }
+        td{
+            vertical-align: top;
+            padding-top: 15px;
+            position: relative;
+            line-height: 22px;
+            text-align: center;
+            border-bottom: 1px solid #e4e4e4;
+        }
+        .row1{
+            padding: 0 0 0 10px;
+            width: 42px;
+            vertical-align: middle;
+            border-bottom: 0;
+            a{
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                border: 1px solid #bcbcbc;
+                background-color: #fff;
+                text-decoration: none;
+                border-radius: 3px;
+                font-size: 0;
+                font-size: 0;
+                line-height: 0;
+                overflow: hidden;
+                margin: 0 10px 0 0;
+                vertical-align: text-bottom;
+                &:hover{
+                    border-color: #ff2832;
+                    text-decoration: none;
+                }
+                &.check_on{
+                    border-color: #ff2832;
+                    background: #ff2832 url(../img/cart/icon_sprite.png) no-repeat -65px -1px;
+                }
+            }
+        }
+        .row_img{
+            padding: 20px 20px 20px 0;
+            width: 80px;
+            border-bottom: 0;
+            position: relative;
+            z-index: 9;
+            font-size: 0;
+            line-height: 0;
+        }
+        .row_name{
+            width: 330px;
+            line-height: 18px;
+            text-align: left;
+            position: relative;
+            padding-top: 17px;
+            .name{
+                display: block;
+                width: 100%;
+                height: 36px;
+                overflow: hidden;
+                margin-bottom: 27px;
+            }
+        }
+        .row3{
+            width: 130px;
+        }
+        .amount{
+            border: 1px solid #dcdcdc;
+            height: 28px;
+            width: 94px;
+            line-height: 28px;
+            font-size: 14px;
+            margin: 5px auto;
+            overflow: hidden;
+            a{
+                display: block;
+                float: left;
+                height: 28px;
+                width: 28px;
+                background-color: #f4f4f4;
+            }
+            input{
+                width: 36px;
+                height: 28px;
+                line-height: 28px\9;
+                float: left;
+                padding: 0;
+                text-align: center;
+                border: 1px solid #dcdcdc;
+                border-width: 0 1px;
+                background-color: #fff;
+                font-weight: bold;
+            }
+            .row5{
+                width: 70px;
+            }
+        }
+        .price_n{
+                font-size:13px;
+                color:#323232;
+            }
+    }
+    
+    .shopping_total{
+        width: 960px;
+        height: 72px;
+        z-index: 10;
+        margin: 20px auto;
+        padding: 0 62px;
+        background: url(../img/cart/shopping_total.png) 0 center no-repeat;
+        position: relative;
+        left:-75px;
+        .total_right{
+            float: right;
+            margin: 18px 0 0;
+            width: 530px;
+            position: relative;
+            
+        }
+        .total_left{
+            float: left;
+            line-height: 58px;
+            width: 430px;
+            position: relative;
+            span{
+                margin-left: 80px;
+            }
+            em{
+                color:red;
+                font-size:12px;
+            }
+        }
+        #jiesuan{
+            float: right;
+            display: block;
+            width: 116px;
+            height: 38px;
+            font: bold 18px/38px "Microsoft Yahei";
+            color: #fff;
+            background-color: #ff2832;
+            border-radius: 2px;
+            text-align: center;
+            margin-top: 4px;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        .subtotal{
+            padding-right: 30px;
+            line-height: 24px;
+            float: right;
+        }
+        .cartsum{
+            width: 114px;
+            text-align: right;
+            padding: 0 8px 0 0;
+        }
+        .price{
+            font-size: 25px;
+            color: #ff2832;
+        }
+    }
+}
